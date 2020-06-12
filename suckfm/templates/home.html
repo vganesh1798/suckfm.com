@@ -5,27 +5,27 @@
         <title>SuckFM Website</title>
         <link rel = "stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
     </head>
-    <body>
+    <body onload="pickColor()">
         <div class = "banner-text">
             <ul id="menu">
-                <li><a href="home.html" title="Home"></a></li>
-                <li><a href="suckfest.html" title="SuckFest 2020"></a></li>
-                <li><a href="artists.html" title="Artists"></a></li>
-                <li><a href="events.html" title="Events"></a></li>
-                <li><a href="about.html" title="About"></a></li>
-                <li><a href="contact.html" title="Contact"></a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <h2>SuckFM</h2>
         </div>
         <div class="animation-area">
             <ul class="box-area">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="square"></li>
+                <li class="square"></li>
+                <li class="square"></li>
+                <li class="square"></li>
+                <li class="square"></li>
             </ul>
         </div>
+        <script src="{{ url_for('static',filename='js/squares.js') }}"></script>
     </body>
 </html>

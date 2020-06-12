@@ -8,6 +8,7 @@ body{
 .banner-text{
     width: 100%;
     position: absolute;
+    z-index: 1000;
 }
 .banner-text ul{
     height: 50px;
@@ -22,12 +23,12 @@ body{
 }
 .banner-text h2{
     text-align: center;
-    color:black;
+    color:white;
     font-size: 50px;
     margin-top: 20%;
 }
 .animation-area{
-    background: linear-gradient(to left, #8942a8, #ba382f);
+    background-color: black;
     width: 100%;
     height: 100vh;
 }
@@ -46,7 +47,6 @@ body{
     list-style: none;
     width: 25px;
     height: 25px;
-    background: rgba(28,180,206,0.98);
     animation: animate 20s linear infinite;  
     bottom: -150px;
 }
