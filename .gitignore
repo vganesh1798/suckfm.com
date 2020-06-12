@@ -1,3 +1,6 @@
 # Editors
 .vscode/
 .idea/
+
+# Operating System Files
+*.DS_Store
