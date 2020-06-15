@@ -13,6 +13,9 @@ div.wrapper {
     width: 600px;
     height: 200px;
 }
+.logo {
+    text-align: center;
+}
 .banner-text{
     width: 100%;
     position: absolute;
@@ -20,7 +23,7 @@ div.wrapper {
 }
 .banner-text ul{
     height: 50px;
-    float:right;
+    text-align: center;
 }
 .banner-text ul li{
     display: inline-block;
