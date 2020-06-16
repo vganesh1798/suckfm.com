@@ -50,6 +50,9 @@ body {
     margin-right: auto;
     width: 50%;
 }
+.logo {
+    text-align: center;
+}
 .banner-text{
     width: 100%;
     position: absolute;
@@ -57,7 +60,7 @@ body {
 }
 .banner-text ul{
     height: 50px;
-    float:right;
+    text-align: center;
 }
 .banner-text ul li{
     display: inline-block;
