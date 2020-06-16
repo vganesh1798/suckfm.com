@@ -8,6 +8,11 @@
     z-index: 1;*/
 }
 
+section{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .renderer {
     border: solid blue;
     border-radius: 20%;
