@@ -1,0 +1,37 @@
+.visualizer {
+    /*height: 25rem;
+    width: 25rem;
+    margin: auto;
+    border: solid lavender;
+    border-radius: 50%;
+    background: linear-gradient(#ff00bf, #00c0ff);
+    z-index: 1;*/
+}
+
+.renderer {
+    border: solid blue;
+    border-radius: 20%;
+}
+
+.player {
+    height: 5rem;
+    width: 5rem;
+    margin: 10rem auto;
+    border-radius: 50%;
+    border: transparent;
+    background: transparent;
+    z-index: 2000;
+}
+
+.material-icons {
+    color: white !important;
+    font-size: 5em !important;
+}
+
+.artist-label {
+    padding-top: 2rem;
+}
+
+.ip {
+    font-size: 3em;
+}
