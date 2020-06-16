@@ -6,7 +6,6 @@
         <link rel = "stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
         <script src="https://kit.fontawesome.com/4d1a73fdce.js" crossorigin="anonymous"></script>
     </head>
-<<<<<<< HEAD
     <body onload="pickColor()">
         <div class = "social-menu">
             <ul>
@@ -36,35 +35,36 @@
                 </li>
             </ul>
         </div>
-=======
-    <body>
->>>>>>> 9c61e824c7d66409571cac173a53d3a2f4076fa0
-        <div class = "banner-text">
-            <ul id="menu">
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
-                <li><a href="artists.html">Artists</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-<<<<<<< HEAD
-            <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}"  alt="SuckFM Logo" class = "right">
-=======
-            <div class ="wrapper">
-            <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "logo" alt="SuckFM Logo">
+
+        <body>
+
+            <div class = "banner-text">
+                <ul id="menu">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}"  alt="SuckFM Logo" class = "right">
+
+                <div class ="wrapper">
+                    <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "logo" alt="SuckFM Logo">
+                </div>
+
             </div>
->>>>>>> 9c61e824c7d66409571cac173a53d3a2f4076fa0
-        </div>
-        <div class="animation-area">
-            <ul class="box-area">
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-            </ul>
-        </div>
-        <script src="{{ url_for('static',filename='js/squares.js') }}"></script>
+            <div class="animation-area">
+                <ul class="box-area">
+                    <li class="square"></li>
+                    <li class="square"></li>
+                    <li class="square"></li>
+                    <li class="square"></li>
+                    <li class="square"></li>
+                </ul>
+            </div>
+            <script src="{{ url_for('static',filename='js/squares.js') }}"></script>
+        </body>
     </body>
 </html>
