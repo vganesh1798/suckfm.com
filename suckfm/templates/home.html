@@ -4,8 +4,37 @@
         <meta charset="UTF-8">
         <title>SuckFM Website</title>
         <link rel = "stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+        <script src="https://kit.fontawesome.com/4d1a73fdce.js" crossorigin="anonymous"></script>
     </head>
     <body onload="pickColor()">
+        <div class = "social-menu">
+            <ul>
+                <li style = "float: left">
+                    <a href="https://open.spotify.com/artist/4lnnNdPMi4MTuHdhAPjj93?si=62j0xMrGSNayTzxYREl47A"><i class="fab fa-spotify fa-3x" area-hidden="true"></i></a>
+                </li>
+                <li style = "float: left">
+                    <a href="https://music.apple.com/us/artist/suck-fm/1458044400"><i class="fab fa-apple fa-3x" area-hidden="true"></i></a>
+                </li>
+                <li style = "float: left">
+                    <a href="http://www.soundcloud.com/suckfm-music-collective"><i class="fab fa-soundcloud fa-3x" area-hidden="true"></i></a>
+                </li>
+                <li style = "float: left">
+                    <a href="https://www.youtube.com/channel/UCHzEsRbcvrK5xDBfX9hjA_g"><i class="fab fa-youtube fa-3x" area-hidden="true"></i></a>
+                </li>
+                <li style = "float: left">
+                    <a href="http://www.twitter.com/suckfm"><i class="fab fa-twitter-square fa-3x" area-hidden="true"></i></a>
+                </li>
+                <li style = "float: left">
+                    <a href="http://www.instagram.com/suckfm"><i class="fab fa-instagram-square fa-3x" area-hidden="true"></i></a>
+                </li>
+                <li style = "float: left">
+                    <a href="https://discord.com/invite/arN2HCB"><i class="fab fa-discord fa-3x" area-hidden="true"></i></a>
+                </li> 
+                <li style = "float: left">
+                    <a href="https://teespring.com/stores/suckfm-apparel-store"><i class="fas fa-tshirt fa-3x" area-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
         <div class = "banner-text">
             <ul id="menu">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -15,9 +44,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class ="wrapper">
-            <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "center" alt="SuckFM Logo">
-            </div>
+            <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}"  alt="SuckFM Logo" class = "right">
         </div>
         <div class="animation-area">
             <ul class="box-area">
