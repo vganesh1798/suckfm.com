@@ -7,7 +7,7 @@ function initPage(){
 audio = new Audio();
 context = new (window.AudioContext || window.webkitAudioContext)();
 analyser = context.createAnalyser();
-audio.src = "../static/the_hunt.wav"; // the source path
+audio.src = "../static/singularity.wav"; // the source path
 source = context.createMediaElementSource(audio);
 source.connect(analyser);
 analyser.connect(context.destination);
@@ -17,8 +17,8 @@ animationLooper();
 function animationLooper(){
 // set to the size of device
 canvas = document.getElementById("renderer");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 0.75 * window.innerWidth;
+canvas.height = 0.75 * window.innerHeight;
 ctx = canvas.getContext("2d");
 // find the center of the window
 center_x = canvas.width / 2;
@@ -26,8 +26,8 @@ center_y = canvas.height / 2;
 radius = 150;
 // style the background
 var gradient = ctx.createLinearGradient(0,0,0,canvas.height);
-gradient.addColorStop(0,"rgba(35, 7, 77, 1)");
-gradient.addColorStop(1,"rgba(204, 83, 51, 1)");
+gradient.addColorStop(0,"rgba(255, 0, 191, 1)");
+gradient.addColorStop(1,"rgba(0, 191, 255, 1)");
 ctx.fillStyle = gradient;
 ctx.fillRect(0,0,canvas.width,canvas.height);
 //draw a circle
