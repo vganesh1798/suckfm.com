@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Artists - SuckFM</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/root.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
+                <li><a href="{{ url_for('artists') }}">Artists</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

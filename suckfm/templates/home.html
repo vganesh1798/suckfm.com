@@ -3,14 +3,15 @@
     <head> 
         <meta charset="UTF-8">
         <title>SuckFM Website</title>
-        <link rel = "stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+        <link rel = "stylesheet" href="{{ url_for('static',filename='styles/style.css')}}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     </head>
     <body>
         <div class = "banner-text">
-            <ul id="menu">
+            <ul>
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
-                <li><a href="artists.html">Artists</a></li>
+                <li><a href="{{ url_for('artists') }}">Artists</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -28,6 +29,6 @@
                 <li class="square"></li>
             </ul>
         </div>
-        <script src="{{ url_for('static',filename='js/squares.js') }}"></script>
+        <script src="{{ url_for('static',filename='scripts/squares.js') }}"></script>
     </body>
 </html>
