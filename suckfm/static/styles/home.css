@@ -1,0 +1,149 @@
+body {
+    overflow: hidden;
+}
+
+.animation-area {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template: 
+        [row1-start] "la main ra" auto [row1-end]
+        / 25% auto 25%;
+}
+
+.left-animation {
+    grid-area: la; 
+}
+
+.right-animation {
+    grid-area: ra;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.left-box-area {
+    padding-top: 40em;
+    padding-left: 10em;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.right-box-area {
+    padding-top: 40em;
+    padding-left: 5em;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.square {
+    display:block;
+    animation: animate 20s linear infinite;
+}
+
+.left-box-area li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s; 
+}
+
+.left-box-area li:nth-child(2){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;  
+}
+.left-box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.right-box-area li:nth-child(1){
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;  
+}
+.right-box-area li:nth-child(2){
+    left: 60%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.right-box-area li:nth-child(3){
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
+.logo-wrapper {
+    display: grid;
+    grid-template: 
+    [row1-start] "ap sp sc" auto [row1-end]
+    [row2-start] "dc lg ts" auto [row2-end]
+    [row3-start] "yt tw ig" auto [row3-end]
+    / auto;
+}
+
+.apple-area {
+    grid-area: ap;
+}
+
+.spotify-area {
+    grid-area: sp;
+}
+
+.soundcloud-area {
+    grid-area: sc;
+}
+
+.discord-area {
+    grid-area: dc;
+    padding-top: 15em;
+}
+
+.logo-area {
+    grid-area: lg;
+}
+
+.teespring-area {
+    grid-area: ts;
+    padding-top: 15em;
+}
+
+.youtube-area {
+    grid-area: yt;
+}
+
+.twitter-area {
+    grid-area: tw;
+}
+
+.insta-area {
+    grid-area: ig;
+}
+
+.logo {
+    text-align: center;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;   
+    }
+}

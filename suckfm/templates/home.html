@@ -3,32 +3,72 @@
     <head> 
         <meta charset="UTF-8">
         <title>SuckFM Website</title>
-        <link rel = "stylesheet" href="{{ url_for('static',filename='styles/style.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/root.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     </head>
     <body>
-        <div class = "banner-text">
-            <ul>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
-                <li><a href="{{ url_for('artists') }}">Artists</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class ="wrapper">
-            <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "logo" alt="SuckFM Logo">
-            </div>
-        </div>
-        <div class="animation-area">
-            <ul class="box-area">
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-            </ul>
-        </div>
-        <script src="{{ url_for('static',filename='scripts/squares.js') }}"></script>
+        <header>
+            <h1>SuckFM</h1>
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation-item"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li class="navigation-item"><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
+                    <li class="navigation-item"><a href="{{ url_for('artists') }}">Artists</a></li>
+                    <li class="navigation-item"><a href="events.html">Events</a></li>
+                    <li class="navigation-item"><a href="about.html">About</a></li>
+                    <li class="navigation-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid-wrapper">
+            <aside class="left-animation">
+                <ul class="left-box-area">
+                    <li class="square"></li>
+                    <li class="square"></li>
+                    <li class="square"></li>
+                </ul>
+            </aside>
+            <section class="main-content">
+                <div class="logo-wrapper">
+                    <div class="apple-area">
+                        <a href="https://music.apple.com/us/artist/suck-fm/1458044400"><i class="fab fa-apple fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="spotify-area">
+                        <a href="https://open.spotify.com/artist/4lnnNdPMi4MTuHdhAPjj93?si=62j0xMrGSNayTzxYREl47A"><i class="fab fa-spotify fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="soundcloud-area">
+                        <a href="http://www.soundcloud.com/suckfm-music-collective"><i class="fab fa-soundcloud fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="discord-area">
+                        <a href="https://discord.com/invite/arN2HCB"><i class="fab fa-discord fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="logo-area">
+                        <img src = "{{ url_for('static',filename = 'logo.png')}}" class = "logo" alt="SuckFM Logo">
+                    </div>
+                    <div class="teespring-area">
+                        <a href="https://teespring.com/stores/suckfm-apparel-store"><i class="fas fa-tshirt fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="youtube-area">
+                        <a href="https://www.youtube.com/channel/UCHzEsRbcvrK5xDBfX9hjA_g"><i class="fab fa-youtube fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="twitter-area">
+                        <a href="http://www.twitter.com/suckfm"><i class="fab fa-twitter-square fa-3x" area-hidden="true"></i></a>
+                    </div>
+                    <div class="insta-area">
+                        <a href="http://www.instagram.com/suckfm"><i class="fab fa-instagram-square fa-3x" area-hidden="true"></i></a>
+                    </div>
+                </div>
+            </section>
+            <aside class="right-animation">
+                <ul class="right-box-area">
+                    <li class="square"></li>
+                    <li class="square"></li>
+                    <li class="square"></li>
+                </ul>
+            </aside>
+        </main>
+        <script src="{{ url_for('static', filename='scripts/squares.js') }}"></script>
+        <script src="https://kit.fontawesome.com/4d1a73fdce.js" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,8 +1,14 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Inconsolata";
     background-color: black;
     color: white;
     text-align: center;
+    margin: 0;
+    min-height: 100%;
 }
 
 a:link {
@@ -35,12 +41,12 @@ nav {
     text-transform: uppercase;
 }
 
-ul {
+.navigation {
     padding: 0;
     list-style-type: none;
 }
 
-li {
+.navigation-item {
     padding: 5%;
     display: inline-block;
 }

@@ -13,13 +13,13 @@
         <header>
             <h1>SuckFest 2020</h1>
             <nav>
-                <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
-                    <li><a href="{{ url_for('artists') }}">Artists</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="navigation">
+                    <li class="navigation-item"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li class="navigation-item"><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
+                    <li class="navigation-item"><a href="{{ url_for('artists') }}">Artists</a></li>
+                    <li class="navigation-item"><a href="events.html">Events</a></li>
+                    <li class="navigation-item"><a href="about.html">About</a></li>
+                    <li class="navigation-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +34,7 @@
             </section>
             <section>
                 <p>Come party with us in Minecraft</p>
-                <code class="ip">134.209.166.174</code>
+                <code class="ip">minecraft.suckfm.com</code>
             </section>
         </main>
         <script src="{{ url_for('static', filename='scripts/visualizer.js') }}"></script>
