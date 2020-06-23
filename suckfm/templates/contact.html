@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Suckfest 2020</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/root.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/suckfest.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body onload="initPage()">
+        <header>
+            <h1>SuckFest 2020</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
+                    <li><a href="{{ url_for('artists') }}">Artists</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <body>
+                <div style="width: 800px; margin-left: auto; margin-right: auto;">
+
+                    <form method="POST" action="{{url_for('recieved')}}">
+                        <label>Name:</label>
+                        <input name="sender">
+                        <br>
+                        <br>
+
+                        <label>Email address:</label>
+                        <input name="senderEmail">
+                        <br>
+                        <br>
+
+                        <label>Message:</label>
+                        <textarea rows="5" cols="20" name="message"></textarea>
+                        <br>
+                        <br>
+
+                        <input type="submit" name="submit">
+                    </form>
+                </div>
+            </body>
+        </main>
+    </body>
+</html>

@@ -36,38 +36,6 @@
             </ul>
         </div>
 
-        <body>
-
-            <div class = "banner-text">
-                <ul id="menu">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
-                    <li><a href="artists.html">Artists</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-                <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}"  alt="SuckFM Logo" class = "right">
-
-                <div class ="wrapper">
-                    <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "logo" alt="SuckFM Logo">
-                </div>
-
-            </div>
-            <div class="animation-area">
-                <ul class="box-area">
-                    <li class="square"></li>
-                    <li class="square"></li>
-                    <li class="square"></li>
-                    <li class="square"></li>
-                    <li class="square"></li>
-                </ul>
-            </div>
-            <script src="{{ url_for('static',filename='js/squares.js') }}"></script>
-        </body>
-        
-
         <link rel = "stylesheet" href="{{ url_for('static',filename='styles/style.css')}}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     </body>
@@ -78,11 +46,11 @@
                 <li><a href="{{ url_for('suckfest') }}">Suckfest 2020</a></li>
                 <li><a href="{{ url_for('artists') }}">Artists</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
             </ul>
             <div class ="wrapper">
-            <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "logo" alt="SuckFM Logo">
+                <img src = "{{ url_for('static',filename = 'suckfm2019-removebg-preview.png')}}" class = "logo" alt="SuckFM Logo">
             </div>
         </div>
         <div class="animation-area">
