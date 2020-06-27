@@ -24,13 +24,14 @@ a:hover {
 }
 
 button {
+    font-family: "Inconsolata";
     outline: none;
     transition-duration: 0.4s;
+    background: rgba(110, 0, 255, 0.5);
 }
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(110, 0, 255, 0.5);
 }
 
 header {

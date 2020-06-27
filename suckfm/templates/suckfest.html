@@ -30,10 +30,22 @@
             </section>
             <br>
             <section>
-                <div class = "center info">
+                <div class = "center info grid-wrapper">
                     <p class="artist-label">Current artist: <strong id="currentArtist"></strong></p>
-                    <iframe src="https://mixlr.com/users/8461770/embed?color=329cb0&autoplay=true" width="60%" height="150px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe><small><a href="https://mixlr.com/suckfm" style="color:#1a1a1a;text-align:left; font-family:Helvetica, sans-serif; font-size:11px;"></a></small>
+                    <button id="myBtn">View Schedule</button>
+                    <br>
+                    <iframe class="mixlr" src="https://mixlr.com/users/8461770/embed?color=329cb0&autoplay=true" width="60%" height="150px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe><small><a href="https://mixlr.com/suckfm" style="color:#1a1a1a;text-align:left; font-family:Helvetica, sans-serif; font-size:11px;"></a></small>
                 </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img class="poster" src="{{ url_for('static', filename='poster.png') }}">
+                    </div>
+
+                    </div>
             </section>
             <section>
                 <div class = "center minecraft">
