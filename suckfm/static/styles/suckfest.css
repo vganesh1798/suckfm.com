@@ -1,19 +1,6 @@
-.visualizer {
-    /*height: 25rem;
-    width: 25rem;
-    margin: auto;
-    border: solid lavender;
-    border-radius: 50%;
-    background: linear-gradient(#ff00bf, #00c0ff);
-    z-index: 1;*/
-}
-
 .center {
   margin-left: auto;
   margin-right: auto;
-/*  width: 60%;*/
-/*  border: 3px solid #73AD21;*/
-/*  padding: 10px;*/
 }
 
 .button {
@@ -29,6 +16,14 @@
   margin-right: auto;
 }
 
+.info {
+    font-size: 2em;
+    background: linear-gradient(#ff00bf, #00c0ff);
+}
+
+.minecraft {
+    padding-top: 1em;
+}
 
 section{
     margin-right: auto;
