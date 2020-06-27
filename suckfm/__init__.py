@@ -31,3 +31,7 @@ def about():
 @app.route('/contact/')
 def contact():
     return render_template('contact.html')
+
+@app.route('/recieved/', methods=['GET','POST'])
+def recieved():
+    return render_template('recieved.php')

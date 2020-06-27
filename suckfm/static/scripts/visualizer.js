@@ -8,7 +8,7 @@ function initPage() {
     audio = new Audio();
     context = new (window.AudioContext || window.webkitAudioContext)();
     analyser = context.createAnalyser();
-    audio.src = "https://boombox.kmnr.org/webstream.mp3"; // the source path
+    audio.src = "https://mixlr.com/suckfm"; // the source path "../static/singularity.wav"
     source = context.createMediaElementSource(audio);
     source.connect(analyser);
     analyser.connect(context.destination);
